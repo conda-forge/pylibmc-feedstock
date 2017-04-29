@@ -1,15 +1,14 @@
-{% set version = "1.5.1" %}
-{% set gh_org = "lericson" %}
-{% set gh_repo = "pylibmc" %}
+{% set version = "1.5.2" %}
+{% set name = "pylibmc" %}
 
 package:
-  name: {{ gh_repo }}
+  name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ gh_repo }}-{{ version }}.tar.gz
-  url: https://github.com/{{ gh_org }}/{{ gh_repo }}/archive/{{ version }}.tar.gz
-  sha256: 18fa39885fce5464977d657185f55e491315b84686533db58054605165fd9b06
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: fc54e28a9f1b5b2ec0c030da29c7ad8a15c2755bd98aaa4142eaf419d5fabb33
 
 build:
   number: 0
@@ -20,12 +19,13 @@ requirements:
     - libmemcached
     - python
     - toolchain
-
   run:
     - libmemcached
     - python
 
 test:
+  source_files:
+    - tests
   requires:
     - python
   imports:
@@ -33,7 +33,7 @@ test:
     - pylibmc
 
 about:
-  home: https://github.com/{{ gh_org }}/{{ gh_repo }}
+  home: https://github.com/lericson/{{ name }}
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
