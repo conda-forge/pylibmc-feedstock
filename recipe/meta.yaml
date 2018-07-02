@@ -19,16 +19,13 @@ requirements:
     - {{ compiler('c') }}
   host:
     - libmemcached
+    - pip
     - python
   run:
     - libmemcached
     - python
 
 test:
-  source_files:
-    - tests
-  requires:
-    - python
   imports:
     - _pylibmc
     - pylibmc
