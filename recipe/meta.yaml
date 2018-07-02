@@ -11,23 +11,21 @@ source:
   sha256: fc54e28a9f1b5b2ec0c030da29c7ad8a15c2755bd98aaa4142eaf419d5fabb33
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
   build:
+    - {{ compiler('c') }}
+  host:
     - libmemcached
+    - pip
     - python
-    - toolchain
   run:
     - libmemcached
     - python
 
 test:
-  source_files:
-    - tests
-  requires:
-    - python
   imports:
     - _pylibmc
     - pylibmc

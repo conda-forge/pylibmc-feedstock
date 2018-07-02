@@ -1,2 +1,2 @@
 #!/bin/bash
-"${PYTHON}" setup.py install --with-libmemcached="${PREFIX}"
+"${PYTHON}" -m pip install . --install-option="--with-libmemcached='${PREFIX}'"
