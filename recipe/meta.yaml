@@ -1,4 +1,4 @@
-{% set version = "1.6.0" %}
+{% set version = "1.6.1" %}
 {% set name = "pylibmc" %}
 
 package:
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5ef97be4ca5527d5b87dbe77cfdd94b427028caf4136feff7da23c40e1ded6d8
+  sha256: 8a8dd406487d419d58c6d944efd91e8189b360a0c4d9e8c6ebe3990d646ae7e9
 
 build:
-  number: 1000
+  number: 0
   skip: true  # [win]
 
 requirements:
