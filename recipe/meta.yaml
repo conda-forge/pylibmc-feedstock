@@ -1,4 +1,4 @@
-{% set version = "1.6.2" %}
+{% set version = "1.6.3" %}
 {% set name = "pylibmc" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 41ab49d39540767374891bef0beb5291ca97beb7048b7af77521064953c04dc0
+  sha256: eefa46115537abad65fbe2e032acd1b3463d9bf9e335af4b0916df4e4d3206e0
 
 build:
   number: 0
@@ -20,6 +20,7 @@ requirements:
     - libmemcached
     - pip
     - python
+    - zlib
   run:
     - libmemcached
     - python
