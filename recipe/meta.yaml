@@ -20,6 +20,7 @@ requirements:
     - libmemcached
     - pip
     - python
+    - zlib
   run:
     - libmemcached
     - python
