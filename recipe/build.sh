@@ -1,2 +1,5 @@
 #!/usr/bin/env bash
-"${PYTHON}" -m pip install . --install-option="--with-libmemcached='${PREFIX}'"
+"${PYTHON}" -m pip install . \
+  --no-deps \
+  --no-build-isolation \
+  --global-option="--with-libmemcached='${PREFIX}'"
