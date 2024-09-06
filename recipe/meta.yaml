@@ -28,15 +28,11 @@ requirements:
     - python
 
 test:
-  source_files:
-    - tests
   imports:
     - _pylibmc
     - pylibmc
   requires:
     - pip
-    - pytest
-    - coverage
   commands:
     - pip check
 
