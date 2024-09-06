@@ -17,13 +17,13 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
   host:
-    - cyrus-sasl
     - libmemcached
     - pip
     - python
     - setuptools
     - zlib
   run:
+    - libmemcached
     - python
 
 test:
