@@ -28,9 +28,15 @@ requirements:
     - python
 
 test:
+  source_files:
+    - tests
   imports:
     - _pylibmc
     - pylibmc
+  requires:
+    - pip
+    - pytest
+    - coverage
 
 about:
   home: https://github.com/lericson/pylibmc
