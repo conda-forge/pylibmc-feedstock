@@ -24,7 +24,6 @@ requirements:
     - setuptools
     - zlib
   run:
-    - libmemcached
     - python
 
 test:
@@ -33,7 +32,7 @@ test:
     - pylibmc
 
 about:
-  home: https://github.com/lericson/{{ name }}
+  home: https://github.com/lericson/pylibmc
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
