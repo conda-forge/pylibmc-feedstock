@@ -37,6 +37,8 @@ test:
     - pip
     - pytest
     - coverage
+  commands:
+    - pip check
 
 about:
   home: https://github.com/lericson/pylibmc
