@@ -1,12 +1,11 @@
 {% set version = "1.6.3" %}
-{% set name = "pylibmc" %}
 
 package:
-  name: {{ name }}
+  name: pylibmc
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/p/pylibmc/pylibmc-{{ version }}.tar.gz
   sha256: eefa46115537abad65fbe2e032acd1b3463d9bf9e335af4b0916df4e4d3206e0
 
 build:
@@ -18,9 +17,11 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
   host:
+    - cyrus-sasl
     - libmemcached
     - pip
     - python
+    - setuptools
     - zlib
   run:
     - libmemcached
