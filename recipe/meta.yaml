@@ -5,11 +5,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/p/pylibmc/pylibmc-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/p/pylibmc/pylibmc-{{ version }}.tar.gz
   sha256: eefa46115537abad65fbe2e032acd1b3463d9bf9e335af4b0916df4e4d3206e0
 
 build:
-  number: 3
+  number: 4
   skip: true  # [win]
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
