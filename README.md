@@ -3,11 +3,13 @@ About pylibmc-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pylibmc-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/lericson/pylibmc
+Home: https://pypi.org/project/pylibmc
 
 Package license: BSD-3-Clause
 
 Summary: Quick and small memcached client for Python
+
+Development: https://github.com/lericson/pylibmc
 
 Current build status
 ====================
