@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: 1.6.3
+  version: "1.7.1"
 
 package:
   name: pylibmc
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pylibmc/pylibmc-${{ version }}.tar.gz
-  sha256: eefa46115537abad65fbe2e032acd1b3463d9bf9e335af4b0916df4e4d3206e0
+  sha256: c6efee7a072cf21a92c29efdb3d01605b7c7984c602b9d41e0efd34cfb98cd02
 
 build:
-  number: 5
+  number: 0
   skip: win
   script:
     - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
