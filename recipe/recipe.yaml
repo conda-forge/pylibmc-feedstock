@@ -42,6 +42,8 @@ tests:
       site_packages:
         - pylibmc/**
         - pylibmc-${{ version }}.dist-info/**
+      files:
+        - lib/python*/site-packages/_pylibmc.*${{ SHLIB_EXT }}
   - python:
       imports:
         - _pylibmc
