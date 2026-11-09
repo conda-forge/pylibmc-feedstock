@@ -43,7 +43,7 @@ tests:
         - pylibmc/**
         - pylibmc-${{ version }}.dist-info/**
       files:
-        - lib/python*/site-packages/_pylibmc.*${{ SHLIB_EXT }}
+        - lib/python*/site-packages/_pylibmc.*.so
   - python:
       imports:
         - _pylibmc
