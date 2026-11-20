@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "1.7.1"
+  version: "1.8.0"
 
 package:
   name: pylibmc
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/p/pylibmc/pylibmc-${{ version }}.tar.gz
-  sha256: c6efee7a072cf21a92c29efdb3d01605b7c7984c602b9d41e0efd34cfb98cd02
+  sha256: ca22cce4614930bdf9055435fc561ae96edcedf60498715f1844f6f92c2b0855
 
 build:
   number: 0
